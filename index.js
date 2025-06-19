@@ -19,14 +19,19 @@ links.forEach((linkObj, index) => {
 });
 
 //Background color Change
-document.body.style.backgroundColor = "#F3A26D";
+document.body.style.backgroundColor = "#B4E380";
 
 // header 
 
-const header = document.querySelector('h1');
+const heading = document.querySelector('h1');
 
-heading.style.backgroundColor = '#FF7D29';  
-heading.style.color = 'white';            
-heading.style.padding = '100px';            
-heading.style.borderRadius = '100px';        
-heading.style.textAlign = 'center'; 
+if (heading) {
+  heading.style.backgroundColor = '#FFA447';  
+  heading.style.color = 'white';             
+  heading.style.padding = '15px';
+  heading.style.borderRadius = '20px';
+  heading.style.textAlign = 'center';
+} else {
+  console.log('Heading not found!');
+}
+
